@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hometask #1</title>
+
+    <!--    CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--    Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="script.js" defer></script>
+
+</head>
+<body>
+    <main class="body">
+        <table id="notes">
+            <tr class="header">
+                <th>
+                    Name
+                </th>
+                <th>
+                    Created
+                </th>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Content
+                </th>
+                <th>
+                    Dates
+                </th>
+                <th>
+                </th>
+            </tr>
+        </table>
+        <button id="addNote" type="button">Create Note</button>
+        <div class="hidden placeholder" id="placeholder"></div>
+        <table id="summary">
+            <tr class="header">
+                <th>Note Category</th>
+                <th>Active</th>
+                <th>Archived</th>
+                <th></th>
+            </tr>
+            <tr class="note">
+                <td>
+                    <img src="images/cart.png" class="image" alt="Task"/>Task
+                </td>
+                <td id="taskActive">
+                    0
+                </td>
+                <td id="taskArchived">
+                    0
+                </td>
+                <td></td>
+            </tr>
+            <tr class="note">
+                <td>
+                    <img src="images/settings.png" class="image" alt="Thought"/>Random Thought
+                </td>
+                <td id="thoughtActive">
+                    0
+                </td>
+                <td id="thoughtArchived">
+                    0
+                </td>
+                <td></td>
+            </tr>
+            <tr class="note">
+                <td>
+                    <img src="images/bulb.png" class="image" alt="Idea"/>Idea
+                </td>
+                <td id="ideaActive">
+                    0
+                </td>
+                <td id="ideaArchived">
+                    0
+                </td>
+                <td></td>
+            </tr>
+            <tr class="note">
+                <td>
+                    <img src="images/quote.png" class="image" alt="Quote"/>Quote
+                </td>
+                <td id="quoteActive">
+                    0
+                </td>
+                <td id="quoteArchived">
+                    0
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        <button id="showArchive">Show archived notes</button>
+        <table id="archivedNotes" class="hidden">
+            <tr class="header">
+                <th>
+                    Name
+                </th>
+                <th>
+                    Created
+                </th>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Content
+                </th>
+                <th>
+                    Dates
+                </th>
+                <th>
+                </th>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
