@@ -1,5 +1,5 @@
 export function checkDates(str) {
-    return str.match(/[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}/g);
+    return str.match(/[0-9]{1,2}[\/.\-_\\][0-9]{1,2}[\/.\-_\\][0-9]{4}/g);
 }
 
 const monthNumToStr = {
