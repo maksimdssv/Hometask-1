@@ -43,9 +43,11 @@ function handleBtnClick(type, item) {
 }
 
 function handleDelete(id, category, archived) {
-    notesArr.filter((item) => item.id !== id);
-    removeElementFromDom(id);
-    updateSummary("REMOVE", category, archived);
+    if (confirm("Are you sure ?")) {
+        notesArr.filter((item) => item.id !== id);
+        removeElementFromDom(id);
+        updateSummary("REMOVE", category, archived)
+    }
 }
 
 function updateSummary(type, category, archived = false) {
@@ -94,7 +96,10 @@ document.querySelector("#addNote").addEventListener("click", () => {
 
 document.querySelector("#showArchive").addEventListener("click", () => {
     const archivedNotes = document.querySelector("#archivedNotes");
-    archivedNotes.className = archivedNotes.className ? "": "hidden";
+    archivedNotes.className = archivedNotes.className ? "" : "hidden";
+    const btn = document.querySelector("#showArchive");
+    btn.innerText = btn.innerText === "Show archived notes" ? "Hide archived notes" : "Show archived notes";
+    scrollTo("#archivedNotes");
 });
 
 notesArr.forEach((item) => {
