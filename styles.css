@@ -1,0 +1,145 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+table {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-spacing: 0 15px;
+    table-layout: fixed;
+}
+
+td, th {
+    padding: 8px 20px;
+    max-width: 100%;
+    height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td:nth-child(3), td:nth-child(5) {
+    white-space: normal;
+}
+
+
+td {
+    color: gray;
+    font-size: 20px;
+}
+
+td:last-child{
+    text-align: right;
+    overflow: visible;
+}
+
+td:first-child{
+    text-align: left;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.body {
+    margin: 0 5%;
+}
+
+.header {
+    background-color: dimgrey;
+    color: azure;
+    font-weight: bold;
+}
+
+.note {
+    background-color: powderblue;
+}
+
+.image, .btn > img {
+    width: 30px;
+    height: auto;
+    padding: 8px;
+}
+
+.btn > img {
+    width: 1.6vw;
+}
+
+.image {
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: dimgrey;
+
+}
+
+.btn {
+    background: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.btn:hover {
+    background-color: cornflowerblue;
+}
+
+.btn:active {
+    background-color: blueviolet;
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    background-color: lightsteelblue;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#summary td:last-child  {
+    justify-content: center;
+}
+
+.form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#addNote{
+    height: fit-content;
+    width: fit-content;
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+
+#placeholder textarea{
+    max-width: 100%;
+    max-height: 150px;
+}
+
+#placeholder button{
+    width: fit-content;
+    padding: 5px 8px;
+    margin: auto;
+}
+
+#placeholder select, input, textarea {
+    padding: 5px;
+}
+
+#showArchive{
+    margin-bottom: 15px;
+}
